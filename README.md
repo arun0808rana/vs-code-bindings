@@ -1,6 +1,7 @@
 # VS Code Config
 
 ### User Snippets
+> File > Preferences > User Snippets
 
 ```javascript
 {
