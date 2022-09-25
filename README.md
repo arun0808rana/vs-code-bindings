@@ -1,3 +1,49 @@
+# VS Code Config
+
+### User Snippets
+
+```json
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Import Routes": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "imbrx",
+    "body": ["import { Routes, Route } from 'react-router-dom';"],
+    "description": "import routesm route from react router"
+  },
+  "nexp": {
+    "prefix": "nexpr",
+    "body": [
+      "const express = require('express')",
+      "const app = express()",
+      "//const cors = require('cors')",
+      "//require('dotenv').config()",
+      "const PORT = $1",
+      "",
+      "//app.use(cors())",
+      "",
+      "app.get('/', (req, res) => {",
+      "  res.send('Hello World!')",
+      "})",
+      "",
+      "app.listen(PORT, () => {",
+      "  console.log(`http://localhost:${PORT}`)",
+      "})"
+    ],
+    "description": "Scaffold expressjs snippet"
+  }
+}
+
+```
+
+### Keybindings
+
 `keybindings.json` is located in `~/.config/Code/User`
 
   ```javascript
